@@ -13,4 +13,12 @@ end
         @@all
     end
 
+    def menu_items
+        MenuItem.all.filter {|item| item.recipe == self}
+    end
+
+    def restuarants
+        MenuItem.all.select do 
+
+
 end
