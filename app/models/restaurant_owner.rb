@@ -1,18 +1,24 @@
 class RestaurantOwner
 
     attr_accessor :name, :age
-    @@all =[]
+    @@all=[]
 
-    def intialize(name,age,)
+    def initialize(name,age)
         @name = name
         @age = age
+        @@all << self
     end
 
     def self.all
-        @all
+        @@all
     end
 
+    def restaurants
+        Restaurant.all.filter {|ele| ele.owner == self}
+    end
 
-
+    def menu_items
+        restaurants.map {|ele| ele.menu_items}
+    end
 
 end
