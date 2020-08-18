@@ -22,6 +22,7 @@ recipe3= Recipe.new("Beef","Shredded slow bake sauce")
 menuitem1= MenuItem.new(restaurant1,recipe1, 10.50)
 menuitem2=MenuItem.new(restaurant2,recipe2, 20.50)
 
+# CARYN SAYS: Make sure you add enough instances to test your code thoroughly! 
 
 binding.pry
 

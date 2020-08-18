@@ -1,4 +1,5 @@
 class RestaurantOwner
+    # CARYN SAYS: init, readers, writers and object association methods look clean 
 
     attr_accessor :name, :age
     @@all=[]

@@ -1,5 +1,5 @@
 class MenuItem
-
+    # CARYN SAYS: fixed one little indent issue, otherwise up through object assoc methods look good 
     attr_accessor :price , :recipe, :restaurant
     @@all = []
 
@@ -15,6 +15,6 @@ class MenuItem
     end
 
     def owner
-     self.restaurant.owner
+        self.restaurant.owner
     end
 end

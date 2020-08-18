@@ -27,10 +27,13 @@ class Recipe
     end
 
     def highest_price
+        # CARYN SAYS: make sure you're returning the price intger here 
         menu_items.max {|ele| ele.price}
     end
 
     def lowest_price
+        # CARYN SAYS: this method was not required, but should probably also return the interger price 
+        # ohhhh nevermind i see what you did their for cheapest restaurant! love to see it! 
         menu_items.min {|ele| ele.price}
     end
 
@@ -39,6 +42,8 @@ class Recipe
     end
 
     def inactive
+        # CARYN SAYS: a little confused about your logic here
+        # also note that this method should be a class method 
         restaurants.filter {|ele| ele.self != self}
     end
 end
